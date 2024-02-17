@@ -1,4 +1,4 @@
-//PersonÅ¬·¡½º¸¦ ÀÛ¼º
+//Personí´ë˜ìŠ¤ë¥¼ ì‘ì„±
 #include<iostream>
 #include<string>
 using namespace std;
@@ -9,22 +9,22 @@ class Person {
 
 public:
 	Person(string name, string sex):name(name),sex(sex) {
-		if (sex == "³²¼º") countM++;
-		else if (sex == "¿©¼º") countW++;
-		else cout << "¼ºº° ´Ù½Ã ÀÔ·ÂÇØÁÖ½Ã¿À." << endl;
+		if (sex == "ë‚¨ì„±") countM++;
+		else if (sex == "ì—¬ì„±") countW++;
+		else cout << "ì„±ë³„ ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì‹œì˜¤." << endl;
 	}
 
 	static void printCountAll() {
 		count = countM + countW;
-		cout << "ÃÑ " << count << "¸í " << "³²ÀÚ " << countM << "¸í " << "¿©ÀÚ " << countW << "¸í" << endl;
+		cout << "ì´ " << count << "ëª… " << "ë‚¨ì " << countM << "ëª… " << "ì—¬ì " << countW << "ëª…" << endl;
 	}
 
 	static void printCountMan() {
-		cout << "³²ÀÚ " << countM << "¸í" << endl;
+		cout << "ë‚¨ì " << countM << "ëª…" << endl;
 	}
 
 	static void printCountWoman() {
-		cout << "¿©ÀÚ " << countW << "¸í" << endl;
+		cout << "ì—¬ì " << countW << "ëª…" << endl;
 	}
 
 };
@@ -34,19 +34,19 @@ int Person::countW = 0;
 
 int main() {
 
-	Person p1{ "ÀÌ¼öÇö","³²¼º" };
-	Person p2{ "È²ÇöÅÂ","³²¼º" };
-	Person p3{ "°­¼®ÁØ","³²¼º" };
-	Person p4{ "Â÷±Ô¹Î","³²¼º" };
-	Person p5{ "ÀÌ³ªÀº","¿©¼º" };
-	Person p6{ "Àü¼¼¿ø","¿©¼º" };
-	Person p7{ "ÀÎ»ó¹Î","³²¼º" };
-	Person p8{ "ÀÌ¹Î¿ì","¿©¼º" };
-	Person p9{ "°­Áö¼ö","¿©¼º" };
+	Person p1{ "ì°¨ìœ ë¯¼","ë‚¨ì„±" };
+	Person p2{ "í™©í˜„íƒœ","ë‚¨ì„±" };
+	Person p3{ "ê°•ì„ì¤€","ë‚¨ì„±" };
+	Person p4{ "ì°¨ê·œë¯¼","ë‚¨ì„±" };
+	Person p5{ "ì´ë‚˜ì€","ì—¬ì„±" };
+	Person p6{ "ì „ì„¸ì›","ì—¬ì„±" };
+	Person p7{ "ì¸ìƒë¯¼","ë‚¨ì„±" };
+	Person p8{ "ì´ë¯¼ìš°","ì—¬ì„±" };
+	Person p9{ "ê°•ì§€ìˆ˜","ì—¬ì„±" };
 
-	Person::printCountAll();//ÃÑ 9¸í ³²ÀÚ 4¸í ¿©ÀÚ 5¸í
-	Person::printCountMan();//³²ÀÚ 9¸í
-	Person::printCountWoman();//¿©ÀÚ 5¸í
+	Person::printCountAll();//ì´ 9ëª… ë‚¨ì 4ëª… ì—¬ì 5ëª…
+	Person::printCountMan();//ë‚¨ì 9ëª…
+	Person::printCountWoman();//ì—¬ì 5ëª…
 
 	return 0;
 }
