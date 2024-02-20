@@ -1,0 +1,8 @@
+﻿  string틀래스2.cpp
+C:\Users\ITSC\Desktop\c++이나은\Day_07naeun\string틀래스2.cpp(34,14): warning C4305: '인수': 'int'에서 'const _Elem'(으)로 잘립니다.
+C:\Users\ITSC\Desktop\c++이나은\Day_07naeun\string틀래스2.cpp(34,14): warning C4305:         with
+C:\Users\ITSC\Desktop\c++이나은\Day_07naeun\string틀래스2.cpp(34,14): warning C4305:         [
+C:\Users\ITSC\Desktop\c++이나은\Day_07naeun\string틀래스2.cpp(34,14): warning C4305:             _Elem=char
+C:\Users\ITSC\Desktop\c++이나은\Day_07naeun\string틀래스2.cpp(34,14): warning C4305:         ]
+C:\Users\ITSC\Desktop\c++이나은\Day_07naeun\string틀래스2.cpp(34,14): warning C4309: '인수': 상수 값이 잘립니다.
+  Day_07naeun.vcxproj -> C:\Users\ITSC\Desktop\c++이나은\Day_07naeun\x64\Debug\Day_07naeun.exe
