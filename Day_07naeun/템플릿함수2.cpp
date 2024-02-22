@@ -21,13 +21,13 @@ T min(T a, T b, T c) {
 
 int main() {
 
-	cout << max(1, 3, 5) << endl;
-	max(1.1, 3.5, 5.0);
-	max('a', 'b', 'c');
+	cout << max(1, 3, 5) << endl; //5
+	cout << max(1.1, 3.5, 5.0); << endl; //5.5
+	cout << max('a', 'b', 'c'); << endl; //c
 
-	min(1, 3, 5);
-	min(1.1, 3.5, 5.0);
-	min('a', 'b', 'c');
+	cout << min(1, 3, 5); << endl; //1
+	cout << min(1.1, 3.5, 5.0); << endl; //1.1
+	cout << min('a', 'b', 'c'); << endl; //'a'
 
 	return 0;
 }
