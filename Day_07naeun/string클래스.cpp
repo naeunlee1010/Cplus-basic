@@ -1,9 +1,9 @@
-//string Å¬·¡½º C++ÀÇ ¹®ÀÚ¿­ °ü·Ã Å¬·¡½º
-//¹®ÀÚ¿­À» ÀúÀåÇÏ´Â ±â´É ¿Ü¿¡ ¿©·¯°¡Áö ¹®ÀÚ¿­ Á¶ÀÛ ¸â¹öÇÔ¼öµéÀÌ ÀÖÀ½
+//string í´ëž˜ìŠ¤ C++ì˜ ë¬¸ìžì—´ ê´€ë ¨ í´ëž˜ìŠ¤
+//ë¬¸ìžì—´ì„ ì €ìž¥í•˜ëŠ” ê¸°ëŠ¥ ì™¸ì— ì—¬ëŸ¬ê°€ì§€ ë¬¸ìžì—´ ì¡°ìž‘ ë©¤ë²„í•¨ìˆ˜ë“¤ì´ ìžˆìŒ
 // 
-//CÅ¸ÀÔÀÇ ¹®ÀÚ¿­Àº ¸Ç µÚ¿¡ '\0'(null)¹®ÀÚ°¡ Æ÷ÇÔµÇ¾úÀ¸³ª
-//stringÅ¸ÀÔÀÇ ¹®ÀÚ¿­¿¡´Â Æ÷ÇÔµÇÁö ¾ÊÀ½
-//µ¿ÀûÀ¸·Î ¹®ÀÚ¿­ÀÇ ±æÀÌ¸¦ º¯°æ°¡´É
+//Cíƒ€ìž…ì˜ ë¬¸ìžì—´ì€ ë§¨ ë’¤ì— '\0'(null)ë¬¸ìžê°€ í¬í•¨ë˜ì—ˆìœ¼ë‚˜
+//stringíƒ€ìž…ì˜ ë¬¸ìžì—´ì—ëŠ” í¬í•¨ë˜ì§€ ì•ŠìŒ
+//ë™ì ìœ¼ë¡œ ë¬¸ìžì—´ì˜ ê¸¸ì´ë¥¼ ë³€ê²½ê°€ëŠ¥
 
 #include<iostream>
 #include<string>
@@ -12,19 +12,19 @@ using namespace std;
 int main() {
 
 	string s,str;
-	//ÀÔÃâ·Â
+	//ìž…ì¶œë ¥
 	//cin >> s;
-	getline(cin, s);//getline(ÀÔ·Â½ºÆ®¸², ÀúÀåÇÒº¯¼ö)
-	getline(cin, s, 'a');//'a'Àü±îÁöÀÇ ¹®ÀÚ¿­À» ÀÔ·Â
+	getline(cin, s);//getline(ìž…ë ¥ìŠ¤íŠ¸ë¦¼, ì €ìž¥í• ë³€ìˆ˜)
+	getline(cin, s, 'a');//'a'ì „ê¹Œì§€ì˜ ë¬¸ìžì—´ì„ ìž…ë ¥
 	cout << s << endl;
 
-	//string°´Ã¼ »ý¼º¹æ¹ý
-	str = "apple";//´ëÀÔ¿¬»êÀÚ·Î ¹®ÀÚ¿­ »ý¼º
-	string str1("apple");//»ý¼ºÀÚ·Î ¹®ÀÚ¿­ »ý¼º
+	//stringê°ì²´ ìƒì„±ë°©ë²•
+	str = "apple";//ëŒ€ìž…ì—°ì‚°ìžë¡œ ë¬¸ìžì—´ ìƒì„±
+	string str2("apple");//ìƒì„±ìžë¡œ ë¬¸ìžì—´ ìƒì„±
 	char arr[] = { 'a','c','e' };
-	string str1(arr);//charÇü ¹è¿­·Î »ý¼º
+	string str1(arr);//charí˜• ë°°ì—´ë¡œ ìƒì„±
 
-	string* str3 = new string("apple");//µ¿ÀûÇÒ´çÀ¸·Î »ý¼º
+	string* str3 = new string("apple");//ë™ì í• ë‹¹ìœ¼ë¡œ ìƒì„±
 	
 
 	return 0;
